@@ -1,7 +1,7 @@
 ###
-# Michael Buffone
+# name
 # May 19th, 2021
-# COSC4427 Assignment 1
+# course code Assignment 1
 #
 # This program will explore the N-Queens problem where no two queens attack each other.
 # 
@@ -26,8 +26,8 @@ class Puzzle:
             if self.isSafe(i, column):
                 self.placeQueen(i, column)
                 
-            if self.solvePuzzle(column + 1) == True:
-                return True
+                if self.solvePuzzle(column + 1) == True:
+                    return True
             
             self.removeQueen(i, column)
             
@@ -37,13 +37,11 @@ class Puzzle:
     def isSafe(self, row, column):
         
         # Check all of the positions horizontally and vertically to see if there's a queen
-        for i in range(self.n):
+        for i in range(column):
             if(self.board[row][i] == 1 or self.board[i][column] == 1):
                 return False
-            
-        startingPos = min(row, column) - 1
-        
-        # Check the left diagonals (zip function combines row and column together)
+                    
+        # Check the diagonals (zip function combines row and column together)
         for i,j in zip(range(row, -1, -1), range(column, -1, -1)):
             if(self.board[i][j] == 1):
                 return False
@@ -73,12 +71,15 @@ class Puzzle:
 def main():
     print("-----")
     # Collect the size from the user and create the puzzle board
-    puzzle1 = Puzzle(int(input("Enter a board of size N: ")))
+    userNum = input("Enter a board of size N: ")
+    puzzle1 = Puzzle(int(userNum))
     puzzle1.displayBoard()
     
     if puzzle1.solvePuzzle(0):
         print("Solution found!")
         puzzle1.displayBoard()
+    else:
+        print("No solution could be found when N =", userNum)
     
     
     print("-----")
