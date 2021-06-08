@@ -11,7 +11,6 @@ print(smallestInteger)
 
 secLargestValue = num_list[(np.argsort(num_list)[-2:])[0]]
 print("2nd largest:", secLargestValue)
-print(num_list)
 
 secSmallestValue = num_list[(np.argsort(num_list)[1])]
 print("2nd smallest:", secSmallestValue)
