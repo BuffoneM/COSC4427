@@ -1,7 +1,7 @@
 import random
 import math
 
-num_list = [random.randrange(1,500) for i in range(0, 10)]
+num_list = [random.randrange(1,500) for i in range(0, 3)]
 print(num_list)
 
 largestValue = max(num_list)
@@ -30,7 +30,7 @@ print("Sum:", total, "\nAverage:", avg)
 sum = 0
 for num in num_list:
     sum += (num - avg) ** 2
-stdDev = math.sqrt(sum / (len(num_list) - 1))
+stdDev = math.sqrt(sum / (len(num_list)))
 print("Standard deviation:", stdDev)
 
 num_list.sort()
