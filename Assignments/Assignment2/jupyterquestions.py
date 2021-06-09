@@ -23,7 +23,7 @@ print("2nd smallest:", secSmallestValue)
 
 print(num_list)
 total = sum(num_list)
-avg = total/len(num_list)
+avg = (total) / (len(num_list))
 print("Sum:", total, "\nAverage:", avg)
 
 sum = 0
