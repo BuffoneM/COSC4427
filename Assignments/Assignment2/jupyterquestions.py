@@ -1,7 +1,8 @@
 import random
 import math
 
-num_list = [random.randrange(1,500) for i in range(0, 3)]
+#num_list = [random.randrange(1,500) for i in range(0, 50)]
+num_list = [5,4,3,2,1]
 print(num_list)
 
 largestValue = max(num_list)
@@ -10,17 +11,15 @@ print("Largest:", largestValue)
 smallestValue = min(num_list)
 print("Smallest:", smallestValue)
 
-temp = max(num_list)
-num_list.remove(max(num_list))
-secLargestValue = max(num_list)
+temp = list(num_list)
+temp.remove(max(temp))
+secLargestValue = max(temp)
 print("2nd largest:", secLargestValue)
-num_list.append(temp)
 
-temp = min(num_list)
-num_list.remove(min(num_list))
-secSmallestValue = min(num_list)
+temp = list(num_list)
+temp.remove(min(temp))
+secSmallestValue = min(temp)
 print("2nd smallest:", secSmallestValue)
-num_list.append(temp)
 
 print(num_list)
 total = sum(num_list)
