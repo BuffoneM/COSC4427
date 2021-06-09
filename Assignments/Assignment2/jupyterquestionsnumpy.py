@@ -1,7 +1,7 @@
 import numpy as np
 
-num_list = np.random.randint(1, 500, 50)
-#num_list = [5,4,3,2,1]         # Testing purposes
+#num_list = np.random.randint(1, 500, 50)
+num_list = [5,4,3,2,1]         # Testing purposes
 print(num_list)
 
 largestInteger = np.max(num_list)
@@ -21,8 +21,9 @@ total = np.sum(num_list)
 avg = np.average(num_list)
 print("Sum:", total, "\nAverage:", avg)
 
+variance = np.var(num_list)
 stdDev = np.std(num_list)
-print("Standard deviation:", stdDev)
+print("Variance:", variance, "\nStandard deviation:", stdDev)
 
 median = np.median(num_list)
 print("Median:", median)

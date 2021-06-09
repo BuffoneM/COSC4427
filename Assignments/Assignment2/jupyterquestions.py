@@ -29,8 +29,9 @@ print("Sum:", total, "\nAverage:", avg)
 sum = 0
 for num in num_list:
     sum += (num - avg) ** 2
-stdDev = math.sqrt(sum / (len(num_list)))
-print("Standard deviation:", stdDev)
+variance = sum / (len(num_list))
+stdDev = math.sqrt(variance)
+print("Variance:", variance, "\nStandard deviation:", stdDev)
 
 num_list.sort()
 print("Sorted list:", num_list)
