@@ -1,7 +1,7 @@
 import numpy as np
 
-#num_list = np.random.randint(1, 500, 50)
-num_list = [5,4,3,2,1]
+num_list = np.random.randint(1, 500, 50)
+#num_list = [5,4,3,2,1]         # Testing purposes
 print(num_list)
 
 largestInteger = np.max(num_list)

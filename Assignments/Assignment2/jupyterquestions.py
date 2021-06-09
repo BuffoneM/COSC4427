@@ -1,8 +1,8 @@
 import random
 import math
 
-#num_list = [random.randrange(1,500) for i in range(0, 50)]
-num_list = [5,4,3,2,1]
+num_list = [random.randrange(1,500) for i in range(0, 50)]
+#num_list = [5,4,3,2,1]         # Testing purposes
 print(num_list)
 
 largestValue = max(num_list)
