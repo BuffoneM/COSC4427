@@ -33,7 +33,29 @@ def countLines(file):
             count += 1
     return count
 
-# P5: Find and print the longest word.
+# P5: Find and print the longest word
+def longestWord(file):
+    return 0
+    
+# P6: Find and print the 10 most common words.
+def mostCommon(file):
+    return 0
+
+# P7: Find and print the 10 least common words.
+def leastCommon(file):
+    return 0
+
+# P8: Count the number of words that begin with each English letter.
+def startWithLetter(file):
+    return 0
+
+# P9: List unique words by each English letter.
+def listByLetter(file):
+    return 0
+
+# P10: Count the number of digits.
+def countDigits(file):
+    return 0
 
 # Codes of the loading "the_bible.txt" file goes here
 fileName = "Assignment3/test.txt"
